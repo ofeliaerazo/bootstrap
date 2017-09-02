@@ -1,0 +1,774 @@
+@import "../bower_components/font-awesome/css/font-awesome.css";
+@import "../bower_components/bootstrap/dist/css/bootstrap.css";
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot");
+  src: url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff") format('woff'), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("../bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format('svg');
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.1.0");
+  src: url("../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format('embedded-opentype'), url("../bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.1.0") format('woff'), url("../bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.1.0") format('truetype'), url("../bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.browserupgrade {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+/* inject:styl */
+.AboutUs {
+  background: #f8f8f8;
+  padding-top: 110px;
+}
+.AboutUs >section {
+  padding: 40px 0;
+}
+.AboutUs-section {
+  border-bottom: 2px solid #7ec5ff;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.Quienes-somos {
+  padding: 0;
+  background: #f2fcfc;
+}
+.Proposito {
+  background: #e2eff1;
+}
+.Mision-vision {
+  background: #f2fcfc;
+  border-bottom: 2px solid #7ec5ff;
+}
+.Nuestra-historia {
+  background: #e2eff1;
+}
+.Concepto {
+  vertical-align: center;
+}
+.Titulo {
+  padding: 0 20px 0 0;
+  font-size: 30px;
+  color: #7ec5ff;
+}
+.Descripcion {
+  font-size: 18px;
+}
+.Imagen img {
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 900px) {
+  .Imagen {
+    width: 100%;
+    align-items: center;
+  }
+  .Titulo {
+    text-align: center;
+  }
+}
+.contactUs {
+  padding: 5.2em 0 3em 0;
+  font-size: 4em;
+  text-align: center;
+}
+.Login {
+/*background-image: url("http://www.electrorafaela.com/gallery_gen/90f01448b36357f297adc2968dd019d7_1378x780.jpg");*/
+  background-image: url("http://plasticoscj.com/wp-content/uploads/2015/07/fondo-azul.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 12em 0 4em 0;
+  text-align: center;
+}
+.Login-form {
+  display: inline-block;
+  width: 32%;
+  padding: 40px 90px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 50px 5px #3d494e;
+}
+.Login-formLogotype {
+  font-size: 3.5em;
+  margin: 0;
+}
+.Login-formTitle {
+  margin: 5px 0 12px 0;
+}
+.Login-formInput,
+.Login .Login-formButton {
+  width: 100%;
+  height: 2.5em;
+  margin-top: 10px;
+  border-style: none;
+  font-weight: bold;
+}
+.Login-formInput {
+  text-align: center;
+  background-color: #eaf1f4;
+}
+.Login-formButton {
+  margin: 25px 0;
+  background: #32a3ff;
+  color: #fff;
+}
+.Login-formBottom {
+  display: block;
+  margin-top: 7px;
+}
+.Login-formInfo,
+.Login .Login-formLink {
+  display: inline-block;
+  margin: 0;
+  padding: 0 5px;
+}
+.Begin {
+  background-image: url("../../assets/slider/sliderEmergency4.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 45em;
+  padding-top: 7em;
+  background-position: top;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.Begin-title {
+  color: #fff;
+  font-size: 60px;
+  display: block;
+  margin: 0 10% 0 10%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+.Explain {
+  background-color: #ff6437;
+  text-align: center;
+  color: #fff;
+}
+.Explain-title {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 1.5em 0 0.5em 0;
+  font-size: 2em;
+  margin: 0;
+}
+.Explain-paragraph {
+  font-size: 1.7em;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px;
+  font-weight: 200;
+}
+.Phone {
+  background-color: #e8e3e3;
+  text-align: center;
+}
+.Phone-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Phone-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 1.5em 0 1.5em 0;
+  font-size: 2em;
+  margin: 0;
+  background: #fff;
+}
+.Phone-titleLine {
+  width: 10%;
+  background: #000;
+  height: 1px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.8em;
+}
+.Phone-slider {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 30%;
+}
+.Phone-sliderContainer {
+  width: 300px;
+  height: 600px;
+  background-image: url("../../assets/images/work/cel.png");
+  background-repeat: no-repeat;
+  background-size: 270px 520px;
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  margin: 10% 0 0 0;
+}
+.Phone-wrapper {
+  width: 224px;
+  margin: 0 auto;
+  height: 339px;
+  margin-top: 92px;
+  margin-left: 25px;
+  overflow: hidden;
+  background: #008000;
+}
+.Phone-text {
+  width: 350px;
+  color: #000;
+  margin: 5% 0 0 0;
+}
+.Phone-textParagraph {
+  font-size: 1.2em;
+}
+img {
+  width: 100%;
+  height: 345px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.Allies {
+  text-align: center;
+  padding-bottom: 5em;
+  color: #fff;
+  background-color: #116ab2;
+}
+.Allies-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 2.5em 0;
+  font-size: 2em;
+  margin: 0;
+}
+.Allies-image {
+  padding: 10px 0;
+  width: 250px;
+  height: 140px;
+}
+.Section-titleLine {
+  width: 10%;
+  background: #fff;
+  height: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.8em;
+}
+#policia {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 1010px) {
+  .Phone-slider {
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .Phone-slider {
+    margin-right: 8%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Phone-slider {
+    margin-right: 16%;
+  }
+}
+@media screen and (max-width: 666px) {
+  .Phone-text {
+    display: none;
+  }
+  .Phone-slider {
+    margin-right: 11%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .Begin-title {
+    font-size: 2.5em;
+  }
+  .Phone-slider {
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .Phone-slider {
+    margin-right: 19%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .Phone-titleLine {
+    display: none;
+  }
+  .Section-titleLine {
+    display: none;
+  }
+  .Phone-slider {
+    margin-right: 23%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .Phone-wrap {
+    justify-content: flex-start;
+  }
+  .Phone-slider {
+    margin-right: 0;
+    margin-left: 19%;
+  }
+}
+@media screen and (max-width: 424px) {
+  .Phone-slider {
+    margin-left: 16%;
+  }
+}
+.OurServices {
+  width: 100%;
+  padding: 5.2em 0 3em 0;
+  font-size: 4em;
+  text-align: center;
+}
+.CreateForm {
+  display: block;
+}
+.Create {
+  padding: 12em 0 4em 0;
+  text-align: center;
+  background-image: url("../../assets/images/work/EmergencyDoor.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.Create-form {
+  display: inline-block;
+  padding: 40px 50px;
+  border-radius: 20px;
+  width: 60%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 50px 5px #3d494e;
+}
+.Create-formTop {
+  display: block;
+  text-align: left;
+}
+.Create-formLogotype {
+  display: inline-block;
+  font-size: 40px;
+  margin: 0;
+}
+.Create-formTitle {
+  display: inline-block;
+  font-size: 2em;
+  padding-left: 0.5em;
+  color: #34526b;
+  font-weight: bold;
+  margin: 0;
+}
+.Create-formRight,
+.Create .Create-formLeft {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+.Create-formLeft {
+  margin-right: 2em;
+}
+.Create-formRight {
+  text-align: center;
+}
+.Create-formInput,
+.Create .Create-formSelect,
+.Create .Create-formOption {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #eaf1f4;
+  border-style: none;
+  font-weight: bold;
+}
+.Create-formSelect {
+  color: #a9a9a9;
+}
+.Create-formButton {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #32a3ff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-style: none;
+}
+.Create-formButton:hover {
+  transition: 0.2s;
+  background-color: #116ab2;
+}
+.Error-formMessage {
+  border: 3px solid #d8000c;
+  background-color: #ffbaba;
+  color: #d8000c;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 10px;
+  display: block;
+}
+.Table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 0 auto 2em auto;
+}
+.Table-rowBody:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.Table,
+.Table-itemHeader,
+.Table-itemBody {
+  border: 1px solid #fff;
+}
+.Table-itemHeader {
+  background-color: #4393b9;
+  color: #fff;
+  height: 1em;
+}
+.Table-itemHeader,
+.Table-itemBody {
+  padding: 15px;
+  text-align: left;
+}
+.Table-wrap {
+  padding-top: 10em;
+}
+.Create {
+  padding: 12em 0 4em 0;
+  text-align: center;
+  background-image: url("../../assets/images/work/EmergencyDoor.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.Create-form {
+  display: inline-block;
+  padding: 40px 50px;
+  border-radius: 20px;
+  width: 60%;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 50px 5px #3d494e;
+}
+.Create-formTop {
+  display: block;
+  text-align: left;
+}
+.Create-formLogotype {
+  display: inline-block;
+  font-size: 40px;
+  margin: 0;
+}
+.Create-formTitle {
+  display: inline-block;
+  font-size: 2em;
+  padding-left: 0.5em;
+  color: #34526b;
+  font-weight: bold;
+  margin: 0;
+}
+.Create-formRight,
+.Create .Create-formLeft {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+.Create-formLeft {
+  margin-right: 2em;
+}
+.Create-formRight {
+  text-align: center;
+}
+.Create-formInput,
+.Create .Create-formSelect,
+.Create .Create-formOption {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #eaf1f4;
+  border-style: none;
+  font-weight: bold;
+}
+.Create-formSelect {
+  color: #a9a9a9;
+}
+.Create-formButton {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: #32a3ff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-style: none;
+}
+.Create-formButton:hover {
+  transition: 0.2s;
+  background-color: #116ab2;
+}
+.Error-formMessage {
+  border: 3px solid #d8000c;
+  background-color: #ffbaba;
+  color: #d8000c;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 10px;
+  display: block;
+}
+.Footer {
+  background: #2c3e4d;
+  height: 8em;
+}
+.Footer-title {
+  color: #e0e0e0;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  display: block;
+  pointer-events: none;
+  cursor: default;
+}
+.Footer-developer {
+  text-align: center;
+  background-color: #fff;
+  margin: 0;
+  padding: 5px;
+  color: #97abbb;
+  font-weight: bold;
+}
+.Footer-link:link {
+  text-decoration: none;
+}
+.Footer-socialNet {
+  text-align: center;
+  padding-top: 1em;
+}
+.fa-twitter,
+.fa-facebook-official,
+.fa-youtube-play {
+  font-size: 2.5em;
+  padding: 10px;
+}
+#facebook {
+  color: #3b5998;
+}
+#twitter {
+  color: #00aced;
+}
+#youtube {
+  color: #e52d27;
+}
+.modal-primary .modal-header,
+.modal-info .modal-header,
+.modal-success .modal-header,
+.modal-warning .modal-header,
+.modal-danger .modal-header {
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+.modal-primary .modal-header {
+  background: #428bca;
+}
+.modal-info .modal-header {
+  background: #5bc0de;
+}
+.modal-success .modal-header {
+  background: #5cb85c;
+}
+.modal-warning .modal-header {
+  background: #f0ad4e;
+}
+.modal-danger .modal-header {
+  background: #d9534f;
+}
+.Header {
+  width: 100%;
+  overflow: hidden;
+  background: #32a3ff;
+  position: fixed;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  z-index: 2000;
+}
+.Header-top {
+  background-color: #7ec5ff;
+  text-align: right;
+}
+.Header-topLink {
+  line-height: 2.5em;
+  color: #fff;
+  font-size: 16px;
+  padding: 6px 30px;
+  margin-left: 10px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+.Header-topLink:link {
+  text-decoration: none;
+}
+#LoginButton {
+  background-color: rgba(255,255,255,0.3);
+}
+#LoginButton:hover {
+  transition: 0.3s;
+  background-color: #fff;
+  color: #7ec5ff;
+}
+#RegisterButton:hover {
+  transition: 0.3s;
+  background-color: #fff;
+  color: #7ec5ff;
+}
+.Navbar-list {
+  padding-top: 12px;
+  text-align: right;
+  margin: 0;
+}
+.Navbar-item {
+  color: #fff;
+  padding: 10px 5px;
+  font-weight: normal;
+  display: inline-block;
+}
+.Navbar-link {
+  transition: 0.35s;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.Navbar-link:link {
+  text-decoration: none;
+}
+.Navbar-link:hover {
+  background-color: #fff;
+  color: #32a3ff;
+  padding: 24px 10px;
+}
+.Navbar-link:active {
+  text-decoration: none;
+}
+.Navbar-barra {
+  font-size: 30px;
+  color: #fff;
+  background: #32a3ff;
+  border-style: none;
+  display: none;
+  cursor: pointer;
+}
+.fa-info-circle {
+  font-size: 1.2em;
+  color: #ff6437;
+}
+.alignNavbar {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.logo-iemergencia {
+  width: 300px;
+  height: 70px;
+}
+.fa-info-circle {
+  font-size: 1.2em;
+  color: #ff6437;
+}
+@media screen and (max-width: 1060px) {
+  .Navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Navbar-logotype {
+    display: block;
+  }
+  .Navbar-list {
+    padding-left: 0;
+  }
+  .Navbar-link:hover {
+    background: #fff;
+    color: #32a3ff;
+    padding: 15px 10px 15px 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Navbar {
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+  }
+  .Navbar-logotype {
+    width: 100%;
+    display: block;
+  }
+  .Navbar-logotype>i {
+    margin-left: 0.2em;
+  }
+  .Navbar-barra {
+    display: inline-block;
+    position: absolute;
+    margin-top: 0.65em;
+    margin-right: 0.2em;
+    right: 0;
+  }
+  .Navbar-item {
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    border-top: 1px solid #ea8569;
+    border-bottom: 1px solid #ea8569;
+    background: #ff6437;
+  }
+  .Navbar-list {
+    width: 100%;
+    padding-top: 0;
+  }
+  .Navbar-link {
+    display: block;
+    transition: 0s;
+    width: 100%;
+  }
+  .Navbar-link:hover {
+    background: none;
+    color: #fff;
+    padding: 0px 10px;
+  }
+  .Navbar-link:hover {
+    transition: 0.5s;
+    background: #ea8569;
+  }
+}
+@media screen and (max-width: 405px) {
+  .Navbar-logotypeTitle,
+  .fa-info-circle {
+    font-size: 70%;
+    position: relative;
+    bottom: 4.5px;
+  }
+  .Navbar-logotype {
+    height: 1.6em;
+  }
+}
+@media screen and (max-width: 385px) {
+  .Header-top {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+/* endinject */
+
+/*# sourceMappingURL=app.css.map */
